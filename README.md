@@ -1,11 +1,12 @@
 # [MUSINSA] Java(Kotlin) Backend Engineer - 과제
 
 이 프로젝트는 아래 기능에 대해 구현 되었습니다.:
-
 - 과제에서 부여된 4가지 기능을 사용할 수 있게 하는 API 구현
 - API 테스트를 위한 H2 DB 설정 및 sql
 - API 실패 시 실패 사유 전달을 위한 exception response
 - repositoy 및 service 의 test case
+
+project 폴더가 gradle project이므로 project 폴더를 gradle project 로 import 해서 사용해 주세요.
 
 ## build application
 ```
