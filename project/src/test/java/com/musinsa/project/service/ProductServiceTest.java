@@ -47,7 +47,7 @@ public class ProductServiceTest {
 	public void getBrandByCategoryTest() {
 		
 		//when
-		List<Product> productList = productService.getBrandByCategory("ìƒì˜");
+		List<Product> productList = productService.getBrandByCategory("»óÀÇ");
 		
 		//then
 		Assertions.assertEquals(productList.get(productList.size() - 1).getBrand(), "I");		
@@ -58,7 +58,7 @@ public class ProductServiceTest {
 		
 		//when then
 	    try {
-			List<Product> productList = productService.getBrandByCategory("ìë™ì°¨");
+			List<Product> productList = productService.getBrandByCategory("ÀÚµ¿Â÷");
 	    } catch (ProductException e) {
 	        Assertions.assertEquals(ErrorCode.INVALID_PARAMETER.getMessage(), e.getErrorCode().getMessage());
 	    }
@@ -70,12 +70,12 @@ public class ProductServiceTest {
 		//given
 		ProductRequest productRequest = new ProductRequest();
 		productRequest.setBrand("A");
-		productRequest.setCategory("ì•¡ì„¸ì„œë¦¬");
+		productRequest.setCategory("¾×¼¼¼­¸®");
 		productRequest.setPrice(1000);
 		
 		//when
 		productService.saveProduct(productRequest);
-		List<Product> productList = productService.getBrandByCategory("ì•¡ì„¸ì„œë¦¬");
+		List<Product> productList = productService.getBrandByCategory("¾×¼¼¼­¸®");
 		
 		//then
 		Assertions.assertEquals(productList.get(0).getBrand(), "A");	
@@ -102,11 +102,11 @@ public class ProductServiceTest {
 		//given
 		ProductRequest productRequest = new ProductRequest();
 		productRequest.setBrand("A");
-		productRequest.setCategory("ì•¡ì„¸ì„œë¦¬");
+		productRequest.setCategory("¾×¼¼¼­¸®");
 		
 		//when
 		productService.deleteProduct(productRequest);
-		List<Product> productList = productService.getBrandByCategory("ì•¡ì„¸ì„œë¦¬");
+		List<Product> productList = productService.getBrandByCategory("¾×¼¼¼­¸®");
 		
 		//then
 		Assertions.assertEquals(productList.size(), 8);
@@ -118,7 +118,7 @@ public class ProductServiceTest {
 		//given
 		ProductRequest productRequest = new ProductRequest();
 		productRequest.setBrand("A");
-		productRequest.setCategory("ìë™ì°¨");
+		productRequest.setCategory("ÀÚµ¿Â÷");
 		
 		//when then
 	    try {

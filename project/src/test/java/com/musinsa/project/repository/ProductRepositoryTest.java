@@ -31,7 +31,7 @@ public class ProductRepositoryTest {
 	@Test
 	public void findByCategoryTest() {
 		//when
-		List<Product> productList = productRepository.findByCategory("Â»Ã³Ã€Ã‡");
+		List<Product> productList = productRepository.findByCategory("»óÀÇ");
 		
 		//then
 		Assertions.assertTrue(productList.size() > 0);
@@ -41,7 +41,7 @@ public class ProductRepositoryTest {
 	@Test
 	public void findByBrandAndCategoryTest() {
 		//when
-		List<Product> productList = productRepository.findByBrandAndCategory("A", "Â»Ã³Ã€Ã‡");
+		List<Product> productList = productRepository.findByBrandAndCategory("A", "»óÀÇ");
 		
 		//then
 		Assertions.assertEquals(productList.get(0).getPrice(), 11200);
