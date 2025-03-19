@@ -6,7 +6,7 @@
 - API 실패 시 실패 사유 전달을 위한 exception response
 - repositoy 및 service 의 test case
 
-project 폴더가 gradle project이므로 project 폴더를 import 해서 사용해 주세요.
+project 폴더가 gradle project이므로 압축을 푸시고 project 폴더를 import 해서 사용해 주세요.
 
 ## build application
 ```
