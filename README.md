@@ -11,19 +11,23 @@ project 폴더가 gradle project이므로 project 폴더를 import 해서 사용
 ## build application
 ```
 Gradle 프로젝트로 구성되어 있습니다.
-Gradle Tasks -> build -> build
+- repository down
+- project 폴더를 gradle 프로젝트로 import (java version : 17)
+- 그래들 빌드 해주시면 됩니다. (Gradle Tasks -> build -> build)
 ```
 
 ## Run application
 ```
 spring boot 로 구현되어 있습니다. spring boot app 을 실행시켜 주세요.
-run as -> spring boot app
+- 프로젝트 위에서 우클릭
+- run as -> spring boot app
 
 ```
 
 ## test application
 ```
 스웨거를 통해 기능 테스트가 가능합니다. 어플리케이션 구동 후 아래 url 을 통해 테스트 해주세요.
+각 api 별로 클릭 후 try it out 을 클릭하시면 테스트가 가능합니다.
 http://localhost/swagger-ui/index.html
 ```
 
